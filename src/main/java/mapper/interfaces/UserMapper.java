@@ -2,6 +2,7 @@ package mapper.interfaces;
 
 import dto.UserDto;
 import model.User;
+import org.json.JSONObject;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
@@ -16,4 +17,6 @@ public interface UserMapper {
     @Mapping(target="lastName", source="firstName")
     @Mapping(target="firstName", source="lastName")
     User dtoToModelWithChangeLFName(UserDto userDto);
+
+    User jsonToModel(JSONObject jsonObject);
 }
