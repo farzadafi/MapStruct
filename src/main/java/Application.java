@@ -8,5 +8,9 @@ public class Application {
         User user = UserMapper.INSTANCE.dtoToModel(userDto);
         System.out.println("userDto is " + userDto);
         System.out.println("user is(map)" + user);
+        System.out.println("-----------------------------------");
+        User userMapAndChangeLFName = UserMapper.INSTANCE.dtoToModelWithChangeLFName(userDto);
+        System.out.println("userDto is" + userDto);
+        System.out.println("user is(map)" + userMapAndChangeLFName);
     }
 }
