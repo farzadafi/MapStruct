@@ -23,5 +23,8 @@ public class Application {
         User userJson = userMapperDecorator.jsonToModel(jsonObject);
         System.out.println("json is " + jsonObject);
         System.out.println("user is(map)" + userJson);
+        System.out.println("----------------------------------");
+        userDto = UserMapper.INSTANCE.userToUserDtoWithChangeLFName(user);
+        System.out.println(userDto);
     }
 }
