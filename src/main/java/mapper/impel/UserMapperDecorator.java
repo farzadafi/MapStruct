@@ -17,6 +17,11 @@ public class UserMapperDecorator implements UserMapper {
     }
 
     @Override
+    public UserDto userToUserDtoWithChangeLFName(User user) {
+        return null;
+    }
+
+    @Override
     public User jsonToModel(JSONObject jsonObject) {
         User user = new User();
         user.setFirstName(jsonObject.getString("firstName"));
