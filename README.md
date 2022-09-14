@@ -1,2 +1,2 @@
 # MapStruct
-Map struct is a pouplar mapper and it's very fast,view it at https://mapstruct.org/
+map struct is a very powerful and fast tool for mapping objects,view it at https://mapstruct.org/
